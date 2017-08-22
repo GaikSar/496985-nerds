@@ -1,160 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
+    <title>Магазин шаблонов Nerds</title>
     <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
+</head>
 
-<header>
-	 <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="200" height="80" alt="Логотип магазина готовых шаблонов Нердс">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="shop.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="basket">Корзина</li>
-        </ul>
-      </nav>
-</header>
-<main>
-<div class="header">
-<h1 class="header1">Магазин готовых шаблонов</h1>
-	</div>
-<section class="filters">
+<body>
 
-<h2 class="visually-hidden">Фильтр шалонов</h2>
-
-<form class="filter" method="get" action="#">
-<fieldset>
-          <legend>СТОИМОСТЬ:</legend>   
-</fieldset>
-
-<fieldset>
-            <legend>СЕТКА:</legend> 
-            <ul>
-              <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="adaptive">
-                Адаптивная 
-              </li>
-              <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="fixed">
-                Фиксированная
-              </li>
-              <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="rubber">
-                Резиновая
-              </li>
+    <header>
+        <nav class="main-navigation">
+            <a class="main-header-logo">
+                <img src="img/nerds-logo.svg" width="200" height="80" alt="Логотип магазина готовых шаблонов Нердс">
+            </a>
+            <ul class="site-navigation">
+                <li><a href="studio.html">Студия</a></li>
+                <li><a href="clients.html">Клиенты</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
-</fieldset>
-
-<fieldset>
-            <legend>ОСОБЕННОСТИ:</legend> 
             <ul>
-              <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
-                Слайдер 
-              </li>
-              <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefits">
-                Блок преимуществ
-              </li>
-              <li class="filter-option">
-              <input class="visurjhpbally-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
-                Новости
-              </li>
-               <li class="filter-option">
-               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="galery">
-                Галерея
-              </li>
-               <li class="filter-option">
-               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket">
-                Корзина
-              </li>
+                <a class="basket" href="#">Корзина</a>
             </ul>
-</fieldset>
- <button type="submit" class="filter-button button">ПОКАЗАТЬ</button>
-</form>
-</section>
-<div>
-<ul>CОРТИРОВАТЬ: 
-<li><a href="#">ПО ЦЕНЕ</a></li>
-<li><a href="#">ПО ТИПУ</a></li>
-<li><a href="#">ПО НАЗВАНИЮ</a></li>
-</ul>
-<ul>
-<li><a class="major" href="#"></a></li>
-<li><a class="minor" href="#"></a></li>
-</ul>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h1 class="header1">Магазин готовых шаблонов</h1>
+        </header>
+        </div>
+        <section class="filters">
 
-</div>
- <section class="catalog">
-  <h2 class="visually-hidden">Список сайтов</h2>
-<ul class="catalog-list">
-          <li class="catalog-item">
-              <a href="img/img-sedona.png" width="500" height="800" alt="Седона"> </a>
-          </li>
-          <li class="catalog-item">
-              <a href="img/img-pink.png" width="500" height="800" alt="Пинк"> </a>
-          </li>
-          <li class="catalog-item">
-              <a href="img/img-barbershop.png" width="500" height="800" alt="Барбершоп"> </a>
-          </li>
-          <li class="catalog-item">
-              <a href="img/img-mishka.png" width="500" height="800" alt="Мишка"> </a>
-          </li>
-          <li class="catalog-item">
-              <a href="img/img-kvast.png" width="500" height="800" alt="Кваст"> </a>
-          </li>
-          <li class="catalog-item">
-              <a href="img/img-aplus.png" width="500" height="800" alt="Аплус"> </a>
-          </li>
-</ul>
+            <h2 class="visually-hidden">Фильтр шалонов</h2>
 
-           <ul class="pagination-list">
-           <li class="pagination-item"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Следующая</a></li>
-        </ul>
+            <form class="filter" method="get" action="#">
+                <fieldset>
+                    <legend>СТОИМОСТЬ:</legend>
+                </fieldset>
 
-</section>
+                <fieldset>
+                    <legend>СЕТКА:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="adaptive"> Адаптивная
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="fixed"> Фиксированная
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="rubber"> Резиновая
+                        </li>
+                    </ul>
+                </fieldset>
 
-</main>
+                <fieldset>
+                    <legend>ОСОБЕННОСТИ:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked> Слайдер
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefits"> Блок преимуществ
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked> Новости
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="galery"> Галерея
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket"> Корзина
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit" class="filter-button button">ПОКАЗАТЬ</button>
+            </form>
+        </section>
+        <div>
+            <ul>CОРТИРОВАТЬ:
+                <li><a href="#">ПО ЦЕНЕ</a></li>
+                <li><a href="#">ПО ТИПУ</a></li>
+                <li><a href="#">ПО НАЗВАНИЮ</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="major" href="#"></a>
+                </li>
+                <li>
+                    <a class="minor" href="#"></a>
+                </li>
+            </ul>
 
- <footer class="main-footer">
-      <div class="contacts">
-      <p>
-        <b>NERDS DESIGN STUDIO</b> <br>
-        191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8<br>
-        тел. +7 (812) 275-75-75<br>
-        <a class="button red" href="#">НАПИШИТЕ НАМ</a>
+        </div>
+        <section class="catalog">
+            <h2 class="visually-hidden">Список сайтов</h2>
+            <ul class="catalog-list">
+                <li class="catalog-item">
+                    <a href="img/img-sedona.png" width="500" height="800" alt="Седона"> </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="img/img-pink.png" width="500" height="800" alt="Пинк"> </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="img/img-barbershop.png" width="500" height="800" alt="Барбершоп"> </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="img/img-mishka.png" width="500" height="800" alt="Мишка"> </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="img/img-kvast.png" width="500" height="800" alt="Кваст"> </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="img/img-aplus.png" width="500" height="800" alt="Аплус"> </a>
+                </li>
+            </ul>
+
+            <ul class="pagination-list">
+                <li class="pagination-item"><a>1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">Следующая</a></li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="contacts">
+            <p>
+                <b>NERDS DESIGN STUDIO</b>
+                <br> 191186, Санкт-Петербург,
+                <br> ул. Б. Конюшенная, д. 19/8
+                <br> тел. +7 (812) 275-75-75
+                <br>
+                <a class="button red" href="#">НАПИШИТЕ НАМ</a>
+            </p>
+        </div>
+
+        <div class="footer-social">
+            <ul>
+                <li><a class="social-button" href="#">Вконтакте</a></li>
+                <li><a class="social-button" href="#">Фейсбук</a></li>
+                <li><a class="social-button" href="#">Инстаграм</a></li>
+            </ul>
+        </div>
+        <p>
+            <b>Давайте дружить!</b>
+            <br> Скидка 10% для друзей из социальных сетей.
         </p>
-      </div>
-
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-      </div>
-      <p>
-      <b>Давайте дружить!</b> <br>
-     Скидка 10% для друзей из социальных сетей.
-     </p>
     </footer>
 
-
-
-
-  </body>
+</body>
 
 </html>
