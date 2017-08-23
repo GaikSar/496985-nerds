@@ -100,9 +100,9 @@
 
         <div class="footer-social">
             <ul>
-                <li><a class="social-button" href="#" target="_blank">Вконтакте</a></li>
-                <li><a class="social-button" href="#" target="_blank">Фейсбук</a></li>
-                <li><a class="social-button" href="#" target="_blank">Инстаграм</a></li>
+                <li><a class="social-button visually-hidden" href="#" target="_blank">Вконтакте</a></li>
+                <li><a class="social-button visually-hidden" href="#" target="_blank">Фейсбук</a></li>
+                <li><a class="social-button visually-hidden" href="#" target="_blank">Инстаграм</a></li>
             </ul>
         </div>
         <div>
@@ -110,6 +110,27 @@
             <br> Скидка 10% для друзей из социальных сетей.
         </div>
     </footer>
+
+ <section class="contact">
+      <h2 class="visually-hidden">Форма контактов</h2>
+      <p>Напишите нам </p>
+      <form class="contact-form" action="#" method="post">
+        <p>
+          <label for="contact-name">Ваше имя</label>
+          <input class="contact-names" id="contact-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p>
+          <label for="contact-adress">Ваш e-mail</label>
+          <input class="contact-adress" id="email" type="text" name="adress" placeholder="Для отправки ответа">
+        </p>
+        <p>
+          <label for="contact-text">Текст письма</label>
+          <input class="contact-t" id="contact-text" type="text" name="texts" placeholder="В свободной форме ">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
 
 </body>
 

@@ -40,13 +40,16 @@
                     <legend>СЕТКА:</legend>
                     <ul>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="adaptive"> Адаптивная
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="adaptive" id="filter-adaptive"> 
+                              <label for="filter-adaptive">Адаптивная</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="fixed"> Фиксированная
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="fixed" id="filter-fixed"> 
+                            <label for="filter-fixed">Фиксированная</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="rubber"> Резиновая
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="rubber" id="filter-rubber"> 
+                            <label for="filter-rubber">Резиновая</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -55,19 +58,24 @@
                     <legend>ОСОБЕННОСТИ:</legend>
                     <ul>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked> Слайдер
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked id="filter-slider"> 
+                            <label for="filter-slider">Слайдер</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefits"> Блок преимуществ
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefits" id="filter-benefits"> 
+                            <label for="filter-benefits">Блок преимуществ</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked> Новости
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked id="filter-news"> 
+                            <label for="filter-news">Новости</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="galery"> Галерея
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="galery" id="filter-galery"> 
+                            <label for="filter-galery">Галерея</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket"> Корзина
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket"> 
+                            <label for="filter-basket">Корзина</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -82,8 +90,8 @@
                 <li><a href="#">ПО НАЗВАНИЮ</a></li>
             </ul>
             <ul>
-                <li><a class="major" href="#"></a></li>
-                <li><a class="minor" href="#"></a></li>
+                <li><a class="major visually-hidden" href="#">По уменьшению</a></li>
+                <li><a class="minor visually-hidden" href="#">По увеличению</a></li>
             </ul>
         </div>
         <section class="catalog">
@@ -164,9 +172,9 @@
 
         <div class="footer-social">
             <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
+                 <li><a class="social-button visually-hidden" href="#" target="_blank">Вконтакте</a></li>
+                <li><a class="social-button visually-hidden" href="#" target="_blank">Фейсбук</a></li>
+                <li><a class="social-button visually-hidden" href="#" target="_blank">Инстаграм</a></li>
             </ul>
         </div>
         <p>
@@ -174,6 +182,27 @@
             <br> Скидка 10% для друзей из социальных сетей.
         </p>
     </footer>
+
+ <section class="contact">
+      <h2 class="visually-hidden">Форма контактов</h2>
+      <p>Напишите нам </p>
+      <form class="contact-form" action="#" method="post">
+        <p>
+          <label for="contact-name">Ваше имя</label>
+          <input class="contact-names" id="contact-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p>
+          <label for="contact-adress">Ваш e-mail</label>
+          <input class="contact-adress" id="email" type="text" name="adress" placeholder="Для отправки ответа">
+        </p>
+        <p>
+          <label for="contact-text">Текст письма</label>
+          <input class="contact-t" id="contact-text" type="text" name="texts" placeholder="В свободной форме ">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
 
 </body>
 
